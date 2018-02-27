@@ -1,0 +1,16 @@
+.DS_Store
+.tmp
+.sass-cache
+.idea
+build
+dist
+node_modules
+node_modules-new
+node_modules-bak
+Gemfile.lockfile
+*.log
+*.doc
+coverage
+nwreports
+*.tar.gz
+*.win.vm.*

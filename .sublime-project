@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "JSCS-Formatter": {
+      "format_on_save": true
+    }
+  }
+}
