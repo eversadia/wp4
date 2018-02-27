@@ -29,21 +29,21 @@ module.exports = {
       use: {
         loader: 'babel-loader'
       }
-    }, {
-      test: /\.html$/,
-      use: [
-        'htmllint-loader', {
-          loader: 'html-loader'
-        }
-      ]
-    }, ]
+    } ]
   },
   plugins: [
-    new CleanWebpackPlugin( [ '../../../build' ] ),
+    //new CleanWebpackPlugin( [ '../../../build' ] ),
     new UglifyJSPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    // new HtmlWebpackPlugin( {
-    //   title: 'Code Splitting'
-    // } )
-  ]
+    new HtmlWebpackPlugin( {
+      template: './src/template/main.html',
+      title: 'QTP',
+      filename: 'main.html'
+    } )
+  ],
+  // resolve: {
+  //   alias: {
+  //     src: path.resolve( __dirname, 'src/' )
+  //   }
+  // }
 }
