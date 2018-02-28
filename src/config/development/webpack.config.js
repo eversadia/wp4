@@ -58,6 +58,12 @@ config.plugins = [
     filename: 'index.html',
     hash: true,
     inject: 'body'
+  } ),
+  new webpack.ProvidePlugin( {
+    React: 'react',
+    ReactDOM: 'react-dom',
+    Promise: 'exports?global.Promise!es6-promise',
+    fetch: 'exports?self.fetch!whatwg-fetch'
   } )
 ]
 
