@@ -1,21 +1,11 @@
 import React from 'react'
-import autobind from 'autobind-decorator'
 
-export default class DropdownTabSearch extends React.Component {
+export default class PrintMe extends React.Component {
 
-  constructor() {
-    super()
-    this.state = {}
-  }
-
-  @autobind
-  resize() {
-
-  }
   render() {
+
     return (
-      <div>ever</div>
+      <div>{ this.props.name }</div>
     )
   }
-
 }
