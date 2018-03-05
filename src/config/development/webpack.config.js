@@ -22,12 +22,10 @@ config.target = 'web'
 
 //config.externals = [ 'react' ]
 
-//config.devtool = 'inline-source-map'
+config.devtool = 'inline-source-map'
 
 config.devServer = {
-  proxy: {
-
-  },
+  proxy: {},
   hot: true,
   https: false,
   compress: false,
@@ -54,7 +52,7 @@ config.plugins = [
   new webpack.HotModuleReplacementPlugin(),
   new HtmlWebpackPlugin( {
     template: './src/template/main.html',
-    title: 'QTP',
+    title: 'QTP is',
     filename: 'index.html',
     hash: true,
     inject: 'body'
@@ -73,11 +71,10 @@ config.watch = true
 //   hints: 'error'
 // }
 
-config.stats = {
-  warnings: true,
-  entrypoints: true
-
-}
+// config.stats = {
+//   warnings: true,
+//   entrypoints: true
+// }
 
 config.resolve = {
   alias: {

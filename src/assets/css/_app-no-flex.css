@@ -1,0 +1,355 @@
+.no-placeholder {
+  body {
+
+    /*overflow: auto;*/
+    box-sizing: content-box;
+  }
+
+  header .header-wrap,
+  #main-app {
+    display: table;
+    width: 100%;
+  }
+
+  header .h-left,
+  header .h-right,
+  header .header-search {
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  header .h-right {
+    min-width: 150px;
+    width: 180px;
+    max-width: 400px;
+    text-align: right;
+  }
+
+  header .header-search {
+    .fa-search {
+      top: 18px;
+    }
+
+  }
+
+  #nav-app,
+  #drag-app,
+  #content-wrap-app,
+  #tab-app ul {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  #content-wrap-app {
+  }
+
+  #drag-app {
+    width: 8px;
+    vertical-align: top;
+    position: relative;
+
+    .d-arrow {
+      position: relative;
+      width: 8px;
+    }
+
+    #m-center {
+      position: relative;
+      display: table-cell;
+      vertical-align: middle;
+      width: 8px;
+      text-align: center;
+
+      .m-c-top {
+        position: absolute;
+        top: 10px;
+      }
+
+    }
+
+  }
+
+  .content {
+    display: block;
+  }
+
+  .content-welcome {
+    .welcome {
+      padding-top: 60px;
+    }
+
+  }
+
+  .nav-app {
+    width: 30px;
+  }
+
+  .nav-app {
+    &.inactive {
+      .main-nav {
+        box-sizing: content-box;
+      }
+
+      .navlist {
+        padding: 0;
+      }
+
+      .side-nav-title {
+        width: 28px;
+      }
+
+    }
+
+  }
+
+  #tab-app ul {
+    display: table;
+  }
+
+  .content-gamerounds {
+    .table-header,
+    .table-container {
+      th:nth-child(1),
+      td:nth-child(1) {
+        width: 180px;
+        min-width: 180px;
+      }
+
+    }
+
+  }
+
+  .content-transactions {
+    .table-header,
+    .table-container {
+      th:nth-child(2),
+      td:nth-child(2) {
+        width: 180px;
+        max-width: 180px;
+        min-width: 180px;
+      }
+
+    }
+
+  }
+
+  .dp-list {
+    box-sizing: content-box;
+    margin-right: 2px;
+    width: inherit;
+    left: -1px;
+
+    &.open {
+      padding: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+  }
+
+  #user-dashboard,
+  #game-dashboard {
+    display: table;
+    width: 100%;
+
+    #column-left,
+    #column-right {
+      display: table-cell;
+    }
+
+    #column-left {
+      box-sizing: border-box;
+
+      .child {
+        width: 50% !important;
+        box-sizing: border-box;
+        display: inline-block;
+      }
+
+    }
+
+  }
+
+  .content-provider-dashboard {
+    .provider-dashboard {
+      padding-left: 20px;
+    }
+
+  }
+
+  .charts-total-bets {
+    #totalBets {
+      width: 100%;
+    }
+
+    .operators {
+      display: table;
+    }
+
+    .square-check {
+    }
+
+    .cb-wrap {
+      padding-top: 5px;
+      box-sizing: border-box;
+
+      .cv-box {
+        display: inline-block;
+      }
+
+    }
+
+  }
+
+  .content-dashbord-charts {
+    display: table !important;
+    width: 100%;
+    padding: 0;
+
+    #chart-column-1,
+    #chart-column-2,
+    #chart-column-3 {
+      display: table-cell;
+      position: relative;
+    }
+
+    #chart-column-1 {
+      vertical-align: top;
+      padding: 0;
+
+      #chart-column-1-wrap {
+        overflow: auto;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .charts-time {
+        display: table;
+        width: 100%;
+        height: 38px;
+        text-align: right;
+        line-height: 38px;
+
+        .clock,
+        .refresh,
+        .drop-wrap,
+        .custom-date-wrapper,
+        .error {
+          display: table-cell;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0;
+          line-height: 100%;
+        }
+
+        .drop-wrap {
+        }
+
+        .custom-date-wrapper {
+          #customDate {
+            margin-top: 0;
+            line-height: 100%;
+          }
+
+        }
+
+        .error {
+          text-align: right;
+          height: 28px;
+          line-height: 28px;
+          font-size: 12px;
+          padding: 0 20px 0 0;
+        }
+
+      }
+
+    }
+
+    #chart-column-2 {
+      vertical-align: top;
+      display: table-cell;
+
+      .chart-column-2-wrap {
+        position: relative;
+        vertical-align: middle;
+        display: table-cell;
+        width: 6px;
+      }
+
+      .d-arrow {
+        vertical-align: middle;
+        position: relative;
+      }
+
+      .m-c-top {
+        top: 10px;
+      }
+
+    }
+
+    #chart-column-3 {
+      vertical-align: top;
+
+      .charts-operator {
+        .checkbox-wrap {
+          text-align: center;
+          padding: 2px 0 0 0;
+          display: inline-block;
+          vertical-align: middle;
+
+          input {
+          }
+
+        }
+
+        .operator-list-wrap {
+          display: block;
+        }
+
+        .buttons {
+          width: 100%;
+        }
+
+      }
+
+      &.inactive {
+        padding: 0;
+        margin: 0;
+        display: block;
+
+        .operator-list-wrap {
+          width: 30px;
+          min-width: 30px;
+          max-width: 30px !important;
+        }
+
+      }
+
+    }
+
+  }
+
+  /*wallets*/
+  .content-wallet-details {
+    .parent {
+      margin-left: 15px !important;
+    }
+
+  }
+
+  .content-wallet-dashboard-search {
+    .devider {
+      line-height: 36px;
+    }
+
+  }
+
+  #toast-container.toast-top-center {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+
+}

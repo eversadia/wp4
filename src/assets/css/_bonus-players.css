@@ -1,0 +1,126 @@
+.content-bonus-players {
+  padding-right: 0;
+  padding-bottom: 0;
+
+  .table-container {
+    box-sizing: border-box;
+    height: inherit;
+
+    td {
+      word-break: break-all;
+
+      em {
+        word-break: break-all;
+      }
+
+    }
+
+  }
+
+  .table-header {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-bottom: none;
+
+    table {
+      border: none;
+
+      th {
+        border: none;
+        border-left: 1px solid #ccc;
+      }
+
+    }
+
+  }
+
+  .react-bs-table {
+    border: 0;
+
+    table {
+      border-left: 1px solid #ddd;
+    }
+
+    .react-bs-container-header table {
+      border-top: 1px solid #ddd;
+    }
+
+    .react-bs-container-body table {
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+
+  }
+
+  .react-bs-table,
+  .summary-table,
+  .table-container,
+  .table-header {
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    td,
+    th {
+      width: 80px !important;
+      min-width: 80px !important;
+      max-width: 80px !important;
+    }
+
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 120px !important;
+      min-width: 120px !important;
+      max-width: 120px !important;
+    }
+
+    th:nth-child(5),
+    td:nth-child(5) {
+      width: 65px !important;
+      min-width: 65px !important;
+      max-width: 65px !important;
+    }
+
+    th:nth-child(11),
+    td:nth-child(11) {
+      width: 1px !important;
+      min-width: 1px !important;
+      max-width: 1px !important;
+      border: none;
+      padding: 0 !important;
+      display: none;
+    }
+
+  }
+
+  .summary-table-wrap {
+    margin-bottom: 20px;
+    overflow: auto;
+    overflow-x: hidden;
+
+    th:nth-child(11),
+    td:nth-child(11) {
+      border-right: 1px solid #ddd;
+    }
+
+  }
+
+  .summary-table {
+    td:nth-child(1),
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(7),
+    td:nth-child(8) {
+      background: white;
+      border: 1px solid white;
+    }
+
+    td:nth-child(8) {
+      border-right: 1px solid #ddd;
+    }
+
+  }
+
+}

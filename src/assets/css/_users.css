@@ -1,0 +1,81 @@
+.content-user {
+  padding-bottom: 0;
+
+  .button-wrap {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .table-container {
+    box-sizing: border-box;
+
+    td {
+      em {
+        word-break: break-all;
+      }
+
+    }
+
+  }
+
+  .table-header {
+  }
+
+  /*
+  fix width
+  */
+  .react-bs-table,
+  .table-header,
+  .table-container {
+    th:nth-child(1),
+    td:nth-child(1),
+    th:nth-child(2),
+    td:nth-child(2),
+    th:nth-child(3),
+    td:nth-child(3) {
+      width: 90px !important;
+      min-width: 90px !important;
+    }
+
+    th:nth-child(4),
+    td:nth-child(4),
+    th:nth-child(5),
+    td:nth-child(5),
+    th:nth-child(6),
+    td:nth-child(6) {
+      width: 80px !important;
+      min-width: 80px !important;
+    }
+
+    th:nth-child(7),
+    td:nth-child(7) {
+      width: 40px !important;
+      min-width: 40px !important;
+      border-right: 0;
+    }
+
+    th:nth-child(8),
+    td:nth-child(8) {
+      width: 20px !important;
+      min-width: 20px !important;
+      border-left: 0;
+    }
+
+  }
+
+}
+
+.edit-left {
+  width: 60%;
+  float: left;
+}
+
+.edit-left .btn-primary,
+.edit-left .btn-danger {
+  margin-left: 10px;
+}
+
+.edit-right {
+  float: right;
+  width: 40%;
+}

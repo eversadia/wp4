@@ -1,0 +1,135 @@
+.qt-input-text {
+  position: relative;
+
+  .tools {
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 6px;
+    z-index: 9;
+    padding: 0;
+    background: #f9f9f9;
+    bottom: -29px;
+    display: block;
+    text-align: center;
+    border-radius: 0 0 3px 3px;
+    margin: 0;
+
+    .btn {
+      width: 22px;
+      height: 22px;
+      padding: 0;
+      margin: 3px;
+      font-size: 15px;
+      text-align: center;
+      line-height: 20px;
+    }
+
+  }
+
+  .qt-input-holder {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .input-value-only {
+    z-index: 5;
+    min-height: 20px;
+  }
+
+  .super-small {
+    border: none;
+    background: none;
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: transparent;
+    cursor: default;
+    opacity: 0;
+  }
+
+}
+
+.qt-input-text-multiple {
+  &.pointer {
+    cursor: pointer;
+  }
+
+  .qt-input-multi {
+    position: relative;
+  }
+
+  .tools-multi {
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 6px;
+    z-index: 9;
+    padding: 0;
+    background: #f9f9f9;
+    bottom: -30px;
+    display: block;
+    text-align: center;
+    border-radius: 0 0 3px 3px;
+    margin: 0;
+
+    .buttn {
+      width: 22px;
+      height: 22px;
+      padding: 0;
+      margin: 3px;
+      font-size: 15px;
+      text-align: center;
+      line-height: 20px;
+    }
+
+  }
+
+  .qt-input-result-multi {
+    strong,
+    em {
+      padding-right: 10px;
+      display: inline-block;
+    }
+
+  }
+
+  .qt-input-holder-multi {
+    position: absolute;
+    background: white;
+    top: -8px;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px 10px 0 10px;
+
+    input {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 10px;
+    }
+
+    em {
+      float: left;
+      margin-right: 5px;
+      padding-left: 0;
+      margin-bottom: 0;
+      width: 70px;
+    }
+
+  }
+
+}

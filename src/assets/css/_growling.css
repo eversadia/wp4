@@ -1,0 +1,73 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+  display: block;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+
+  display: none;
+}
+
+.growling {
+  height: auto;
+  padding: 10px;
+  background: #ff5151;
+  border-radius: 5px;/*  border:1px solid #e04040;*/
+  position: fixed;
+  bottom: 5px;
+  text-align: center; /* width: 100%;*/
+  z-index: 99;
+  text-align: center;
+  display: none;
+  z-index: 9999;
+  width: 200px;
+  right: 5px;
+  z-index: 1;
+
+  p {
+    color: black;
+    margin: 0;
+    padding: 0 0 0 0;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+  }
+
+  i {
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    color: white;
+    cursor: pointer;
+    z-index: 4;
+    background: black;
+    border-radius: 25%;
+    padding: 5px;
+  }
+
+}
+
+.growling-open {
+  animation: fadein 1s;
+  display: block;
+}
+
+.growling-close {
+  animation: fadeout 1s;
+  display: none;
+}

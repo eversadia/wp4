@@ -1,0 +1,513 @@
+.content-gamerounds {
+  padding-right: 0;
+
+  .table-header {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-bottom: 1px;
+
+    table {
+      border: none;
+
+      th {
+        border: none;
+        border-left: 1px solid #ccc;
+        word-wrap: word-break;
+        word-break: break-all;
+      }
+
+      td {
+        word-wrap: word-break;
+        word-break: break-all;
+      }
+
+    }
+
+  }
+
+  /* uncomment if the summary is present */
+  .table-loading-wrapper {
+    max-height: 1px;
+  }
+
+  .table-loading {
+    text-align: center;
+    position: relative;
+    top: -50px;
+
+    i {
+      font-size: 40px;
+      color: black;
+    }
+
+  }
+
+  .react-bs-table {
+    border: 0;
+
+    table {
+      border-left: 1px solid #ddd;
+    }
+
+    .react-bs-container-header table {
+      border-top: 1px solid #ddd;
+    }
+
+    .react-bs-container-body table {
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+
+  }
+
+  .react-bs-table,
+  .summary-table,
+  .table-header,
+  .table-container {
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 130px !important;
+      min-width: 130px !important;
+      max-width: 130px !important;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2),
+    th:nth-child(3),
+    td:nth-child(3),
+    th:nth-child(4),
+    td:nth-child(4) {
+      width: 100px !important;
+      min-width: 100px !important;
+      max-width: 100px !important;
+    }
+
+    th:nth-child(5),
+    td:nth-child(5),
+    th:nth-child(6),
+    td:nth-child(6),
+    th:nth-child(7),
+    td:nth-child(7),
+    th:nth-child(8),
+    td:nth-child(8) {
+      width: 90px !important;
+      min-width: 90px !important;
+      max-width: 90px !important;
+    }
+
+    th:nth-child(8) {
+      border-right: 1px solid #ddd;
+    }
+
+  }
+
+  .summary-table-wrap {
+    margin-bottom: 20px;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+  .summary-table {
+    background: white;
+    border-collapse: collapse;
+    border: 1px solid white;
+
+    td {
+      background: white;
+      border: 1px solid white;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 130px !important;
+      min-width: 130px !important;
+      max-width: 130px !important;
+      text-align: left;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2),
+    th:nth-child(3),
+    td:nth-child(3),
+    th:nth-child(4),
+    td:nth-child(4) {
+      width: 100px !important;
+      min-width: 100px !important;
+      max-width: 100px !important;
+    }
+
+    th:nth-child(5),
+    td:nth-child(5),
+    th:nth-child(6),
+    td:nth-child(6),
+    th:nth-child(7),
+    td:nth-child(7),
+    th:nth-child(8),
+    td:nth-child(8) {
+      width: 90px !important;
+      min-width: 90px !important;
+      max-width: 90px !important;
+    }
+
+    td:nth-child(1) {
+      text-align: left;
+    }
+
+    td:nth-child(6) {
+      border-right: 1px solid #ccc;
+    }
+
+    td:nth-child(7),
+    td:nth-child(8) {
+      border: 1px solid #ccc;
+    }
+
+  }
+
+}
+
+.gameroundsLink {
+  color: #3b73af;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+.content-game-rounds {
+  h2 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+}
+
+.game-table-wrap {
+  padding-left: 0;
+  padding-right: 0;
+
+  table.common {
+    width: auto;
+    border: none;
+
+    tr {
+      background: white;
+    }
+
+    td {
+      text-transform: none;
+
+      strong {
+        display: block;
+        padding-right: 15px;
+      }
+
+      border: none;
+    }
+
+  }
+
+}
+
+.content-game-rounds-details {
+  overflow-x: hidden;
+
+  .table-container {
+    box-sizing: border-box;
+    height: inherit;
+    overflow-y: auto;
+    overflow-x: auto;
+
+    td {
+      em {
+        word-break: break-all;
+      }
+
+    }
+
+  }
+
+  .gmd-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+  }
+
+  .plus-minus {
+    cursor: pointer;
+  }
+
+  .slot-table {
+    border-bottom: 1px solid #ccc;
+
+    .table-header {
+      display: none;
+    }
+
+    .win-details {
+      .table-header {
+        display: block;
+      }
+
+    }
+
+    .common {
+      border-bottom: none;
+
+      td,
+      th {
+        border-bottom: none;
+      }
+
+    }
+
+    .white td {
+      background-color: white;
+    }
+
+    .gray td {
+      background-color: #f9f9f9;
+    }
+
+    .dark-gray th {
+      background-color: #e8e8e8;
+    }
+
+    .common-header,
+    .common-tr {
+      th:nth-child(1),
+      td:nth-child(1) {
+        min-width: 50px;
+        width: 50px;
+        max-width: 50px;
+
+        em {
+          display: block;
+          text-align: center;
+          padding: 0;
+        }
+
+      }
+
+      th:nth-child(2),
+      td:nth-child(2),
+      th:nth-child(3),
+      td:nth-child(3),
+      th:nth-child(4),
+      td:nth-child(4),
+      th:nth-child(5),
+      td:nth-child(5) {
+        min-width: 70px;
+        width: 33%;
+      }
+
+    }
+
+    .table-wrap-reel .common td {
+      width: 70px;
+      min-width: 70px;
+    }
+
+  }
+
+  .gamble-pick {
+    .common-header,
+    .common-tr {
+      th:nth-child(2),
+      td:nth-child(2),
+      th:nth-child(3),
+      td:nth-child(3),
+      th:nth-child(4),
+      td:nth-child(4),
+      th:nth-child(5),
+      td:nth-child(5) {
+        min-width: 70px;
+        width: 25%;
+      }
+
+    }
+
+  }
+
+  .no-border {
+    width: auto;
+  }
+
+  .plus-minus {
+    .fa-plus {
+      color: #2e6598;
+    }
+
+    .fa-minus {
+      color: #982e2e;
+    }
+
+  }
+
+  .gmd-box-wrap {
+    margin-bottom: 20px;
+
+    .gmd-box-left {
+      padding: 0;
+
+      table {
+        margin-left: 10px;
+
+        td {
+          min-width: 120px;
+        }
+
+      }
+
+    }
+
+  }
+
+  .table-wrap-reel {
+    border-bottom: 1px solid #ccc;
+  }
+
+  a.btn-info {
+    text-decoration: none;
+    text-shadow: none;
+  }
+
+  a.btn-info:hover {
+    text-decoration: none;
+    text-shadow: none;
+  }
+
+  .game-rounds-details-box {
+    border-bottom: 1px solid #ccc;
+
+    .game-table-wrap table td:nth-child(2) {
+      font-size: 14px;
+    }
+
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .react-bs-table,
+    .summary-table,
+    .table-header,
+    .table-container {
+      th:nth-child(1),
+      td:nth-child(1),
+      th:nth-child(2),
+      td:nth-child(2),
+      th:nth-child(3),
+      td:nth-child(3),
+      th:nth-child(4),
+      td:nth-child(4),
+      th:nth-child(5),
+      td:nth-child(5),
+      th:nth-child(6),
+      td:nth-child(6),
+      th:nth-child(7),
+      td:nth-child(7),
+      th:nth-child(8),
+      td:nth-child(8) {
+        width: 130px !important;
+        min-width: 130px !important;
+      }
+
+    }
+
+  }
+
+  .gmd-box-wrap {
+    table td:nth-child(2) {
+      font-size: 14px;
+    }
+
+  }
+
+  .row {
+
+    /*flex-wrap: wrap;*/
+    padding-left: 15px;
+  }
+
+  .game-table-wrap {
+    table {
+      width: 100%;
+    }
+
+    td:nth-child(1) {
+      min-width: 90px;
+      max-width: 90px;
+      padding-right: 0;
+      padding-left: 0;
+      width: 90px;
+    }
+
+    td.value {
+      position: relative;
+
+      .currency {
+        display: block;
+        width: 100%;
+        max-width: 128px;
+        text-align: right;
+      }
+
+    }
+
+  }
+
+  .game-table-wrap-1,
+  .game-table-wrap-2 {
+    margin-right: 30px;
+  }
+
+  .game-table-wrap-3 {
+    td:nth-child(1) {
+      min-width: 110px;
+      max-width: 110px;
+      width: 110px;
+
+      strong {
+        padding-right: 0;
+      }
+
+    }
+
+  }
+
+  /*.fluidMedia {
+    position: relative;
+    padding-top: 30px;
+    margin-top: 10px;
+    height: 0;
+    overflow: hidden;
+  }*/
+  iframe {
+
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    border: 0;
+    width: 100%;
+    min-height: 2000px;
+  }
+
+  .viewFull {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #444;
+  }
+
+  .extended-details-page {
+    .btn {
+      text-decoration: none;
+    }
+
+  }
+
+}

@@ -1,0 +1,24 @@
+footer {
+  border-top: 1px solid #ccc;
+}
+
+.footer-container {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.footer-container p {
+  color: #666;
+  text-shadow: 1px 1px 1px white;
+  font-size: 12px;
+
+  a {
+    color: #666;
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  a:hover {
+    color: #000;
+  }
+}

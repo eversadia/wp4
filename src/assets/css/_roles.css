@@ -1,0 +1,92 @@
+.content-roles {
+  table.common {
+    th {
+      vertical-align: top;
+      height: 46px;
+      padding-top: 10px;
+      padding-bottom: 0;
+      width: 90px;
+
+      .btn {
+        font-family: 'FontAwesome';
+        padding: 0;
+        background: none;
+        border: none;
+        height: 18px;
+        line-height: 18px;
+
+        &:before {
+          content: "";
+        }
+
+      }
+
+      .dropdown {
+        display: inline-block;
+      }
+
+      .open.dropdown {
+        .btn {
+          &:before {
+            content: "\F013";
+          }
+
+        }
+
+      }
+
+    }
+
+    th:hover {
+      cursor: pointer;
+
+      .btn {
+        &:before {
+          content: "\F013";
+        }
+
+      }
+
+    }
+
+    tr {
+      td {
+        text-align: center;
+      }
+
+      td:nth-child(1) {
+        text-align: left;
+      }
+
+      th:nth-child(1) {
+        text-align: center;
+        cursor: default;
+      }
+
+    }
+
+  }
+
+  table.common .t-head-title {
+    padding-right: 0;
+    text-align: center;
+    display: block;
+
+    em {
+      display: block;
+      padding: 0;
+      line-height: 100%;
+    }
+
+  }
+
+  .no-underline a {
+    text-decoration: none;
+  }
+
+  .role-top {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+}

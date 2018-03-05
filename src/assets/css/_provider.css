@@ -1,0 +1,108 @@
+.content-provider {
+  padding-bottom: 0;
+
+  /*
+  fix width
+  */
+  .react-bs-table,
+  .table-header,
+  .table-container {
+    th:nth-child(1),
+    td:nth-child(1),
+    th:nth-child(2),
+    td:nth-child(2),
+    th:nth-child(3),
+    td:nth-child(3),
+    th:nth-child(4),
+    td:nth-child(4) {
+      width: 90px !important;
+      min-width: 100px !important;
+    }
+
+    th:nth-child(5),
+    td:nth-child(5),
+    th:nth-child(6),
+    td:nth-child(6) {
+      width: 70px !important;
+      min-width: 70px !important;
+    }
+
+    th:nth-child(7),
+    td:nth-child(7) {
+      width: 30px !important;
+      min-width: 30px !important;
+      border-right: 0;
+    }
+
+    th:nth-child(8),
+    td:nth-child(8) {
+      width: 20px !important;
+      min-width: 20px !important;
+      border-left: 0;
+    }
+
+  }
+
+}
+
+.content-edit-provider {
+  .content3 {
+    .dp-group {
+      padding: 0;
+    }
+
+  }
+
+}
+
+.content-provider-dashboard {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+
+  .fa-pencil-square-o {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .provider-details,
+  .provider-details-date {
+    td:nth-child(1) {
+      min-width: 90px;
+      max-width: 90px;
+      padding-right: 0;
+      padding-left: 0;
+      width: 90px;
+    }
+
+    td:nth-child(2) {
+      font-size: 14px;
+      word-break: break-all;
+    }
+
+  }
+
+  .bet-limit-codes-details {
+    td:nth-child(1) {
+      min-width: 170px;
+      width: 170px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    td:nth-child(2) {
+      font-size: 14px;
+      word-break: break-all;
+    }
+
+  }
+
+  .provider-details-actionlink {
+    padding: 0;
+
+    button {
+      margin-right: 5px;
+    }
+
+  }
+
+}

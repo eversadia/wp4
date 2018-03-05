@@ -1,0 +1,111 @@
+.charts-time {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: 38px;
+
+  #customDate {
+    height: 28px;
+    margin-top: 5px;
+    width: 105px;
+    text-align: center;
+  }
+
+  .custom-date-wrapper {
+    display: inline-block;
+    width: 115px;
+  }
+
+  .error {
+    min-width: 200px;
+  }
+
+  .btn-default:active:hover,
+  .btn-default:active:focus,
+  .btn-default:active.focus,
+  .btn-default.active:hover,
+  .btn-default.active:focus,
+  .btn-default.active.focus,
+  .open > .btn-default.dropdown-toggle:hover,
+  .open > .btn-default.dropdown-toggle:focus,
+  .open > .btn-default.dropdown-toggle.focus {
+    background: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+  }
+
+  .dropdown-toggle {
+    &.btn-default {
+      padding: 5px 10px 5px 30px;
+      box-shadow: none;
+      border: none;
+      background: none;
+      font-size: 12px;
+      border: 1px solid white;
+    }
+
+    &.btn-default:hover {
+      background: none;
+      border: 1px solid #ccc;
+    }
+
+  }
+
+  .open.btn-group {
+    .dropdown-toggle {
+      &.btn-default {
+        border: 1px solid #ccc;
+      }
+
+    }
+
+  }
+
+  .devider {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .refresh {
+    font-size: 16px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    flex-grow: 0;
+    align-self: center;
+  }
+
+  .drop-wrap {
+    align-self: center;
+    font-size: 12px;
+
+    ul li {
+      position: relative;
+      font-size: 12px;
+      line-height: 130%;
+    }
+
+  }
+
+  i.fa-check {
+    position: absolute;
+    left: 4px;
+    top: 5px;
+  }
+
+  .caret {
+    margin-left: 3px;
+  }
+
+  .clock {
+    font-size: 16px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    color: #444;
+  }
+
+}

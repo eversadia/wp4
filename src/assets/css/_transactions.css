@@ -1,0 +1,144 @@
+.content-transactions {
+  padding-right: 0;
+
+  /*
+  fix width
+  */
+  .react-bs-table,
+  .table-header,
+  .table-container {
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 50px !important;
+      min-width: 50px !important;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 130px !important;
+      max-width: 130px !important;
+      min-width: 100px !important;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3),
+    th:nth-child(4),
+    td:nth-child(4) {
+      width: 80px !important;
+      min-width: 80px !important;
+    }
+
+    th:nth-child(5),
+    td:nth-child(5),
+    th:nth-child(6),
+    td:nth-child(6),
+    th:nth-child(7),
+    td:nth-child(7),
+    th:nth-child(8),
+    td:nth-child(8) {
+      width: 90px !important;
+      min-width: 90px !important;
+    }
+
+    th:nth-child(8),
+    td:nth-child(8) {
+      border-right: 0;
+    }
+
+    th:nth-child(9),
+    td:nth-child(9) {
+      width: 20px !important;
+      min-width: 20px !important;
+      border-left: 0;
+
+      .dropdown-menu {
+        top: -6px;
+        padding: 0 0;
+
+        li {
+          padding: 0;
+
+          a:hover {
+            border-radius: 3px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  #table-wrapper {
+    margin-bottom: 10px;
+  }
+
+  table.summary-table {
+    border: none;
+    height: 1px;
+
+    td {
+      border: none;
+      height: 1px;
+    }
+
+  }
+
+  .table-loading-wrapper {
+    max-height: 1px;
+  }
+
+  .table-loading {
+    text-align: center;
+    position: relative;
+    top: -50px;
+
+    i {
+      font-size: 40px;
+      color: black;
+    }
+
+  }
+
+}
+
+.t-f {
+  width: 50%;
+}
+
+em.trans-dp-type {
+  width: 140px;
+}
+
+em.trans-dp-operator {
+  width: 140px;
+}
+
+em.trans-dp-currencies {
+  width: 145px;
+}
+
+em.player-id {
+  width: 130px;
+}
+
+.table-search {
+  td {
+    padding: 0 3px 0 0;
+    position: relative;
+  }
+
+  .inputs {
+    padding-left: 10px;
+  }
+
+  .row-t {
+    width: 150px;
+  }
+
+  .row-t2 {
+    width: 120px;
+  }
+
+}

@@ -1,0 +1,26 @@
+.content-not-found {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.notfound-404 {
+  text-align: center;
+  display: block;
+  font-size: 100px;
+  padding: 0 40px;
+  color: #ccc;
+  line-height: 100%;
+}
+
+.not-found {
+  text-align: center;
+  display: block;
+  font-size: 45px;
+  color: #ccc;
+  line-height: 100%;
+  margin: 0;
+  padding: 0 20px;
+}

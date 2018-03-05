@@ -1,0 +1,278 @@
+.content-game {
+  padding-right: 0;
+  padding-bottom: 20px;
+
+  /*
+  fix width
+  */
+  .react-bs-table,
+  .table-header,
+  .table-container {
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 120px !important;
+      min-width: 120px !important;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 120px !important;
+      min-width: 120px !important;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3) {
+      width: 80px !important;
+      min-width: 80px !important;
+    }
+
+    th:nth-child(4),
+    td:nth-child(4) {
+      width: 90px !important;
+      min-width: 90px !important;
+    }
+
+    th:nth-child(5),
+    td:nth-child(5) {
+      width: 90px !important;
+      min-width: 90px !important;
+    }
+
+    th:nth-child(6),
+    td:nth-child(6) {
+      width: 40px !important;
+      min-width: 40px !important;
+      border-right: 0;
+    }
+
+    th:nth-child(7),
+    td:nth-child(7) {
+      width: 20px !important;
+      min-width: 20px !important;
+      border-left: 0;
+    }
+
+  }
+
+  .game-list-header {
+    display: table;
+    width: 100%;
+    padding: 20px 0 15px 0;
+
+    h3 {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    p {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+  }
+
+}
+
+.game-dashboard {
+  .child {
+    padding-right: 40px;
+  }
+
+  .fa-pencil-square-o {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+}
+
+.content-game-dashboard {
+  padding-bottom: 0;
+  position: relative;
+  height: 100%;
+
+  .game-details-logo {
+    border-top: 1px solid #ccc;
+    overflow: auto;
+
+    .game-img {
+      padding: 0 0 0 10px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .fa-pencil-square-o {
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+  }
+
+  .game-actionlink {
+    padding-bottom: 20px;
+    background: white;
+    display: block;
+
+    button {
+      margin-right: 5px;
+    }
+
+  }
+
+  .game-details-date-box-cont,
+  .game-details-box-cont {
+    td:nth-child(1) {
+      min-width: 130px;
+      max-width: 130px;
+      width: 130px;
+      padding-left: 15px;
+    }
+
+    td:nth-child(2) {
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+  }
+
+  .game-details-date-box-cont {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .game-details-date-box-cont {
+    padding-bottom: 20px;
+
+    table {
+      width: auto;
+    }
+
+    td:nth-child(2) {
+      width: 160px;
+      min-width: 160px;
+      padding-left: 15px;
+    }
+
+  }
+
+}
+
+.game-translations {
+  border-top: 1px solid #ccc;
+
+  .game-translation-table {
+    th {
+      text-transform: none;
+    }
+
+    td {
+      background: #f9f9f9;
+    }
+
+    tr:nth-child(even) td {
+      background: #FFF;
+    }
+
+    th:nth-child(1) {
+      width: 15%;
+      min-width: 100px;
+    }
+
+    th:nth-child(2) {
+      width: 20%;
+      min-width: 180px;
+    }
+
+    .qt-elips {
+      position: absolute;
+      left: 0;
+      right: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0 5px;
+    }
+
+  }
+
+}
+
+.game-bet-limits {
+  border-top: 1px solid #ccc;
+
+  .react-bs-table {
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 70px !important;
+      min-width: 70px !important;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 350px !important;
+      min-width: 350px !important;
+
+      em {
+        float: left;
+        margin-right: 5px;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+
+    }
+
+  }
+
+  .fa-pencil-square-o {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+}
+
+.game-add-file-drop {
+  border: 2px solid white;
+  width: 100%;
+  padding: 4px 5px 4px 8px;
+}
+
+.game-add-file-drop-active {
+  border: 2px dashed #ddd;
+}
+
+.game-add-file-drop-browse {
+  display: inline !important;
+}
+
+.game-add-file-drop-reject {
+  border: 2px dashed red;
+}
+
+.game-add-remove-image {
+  position: absolute;
+  cursor: pointer;
+  top: -10px;
+  right: -7px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.game-add-image-wrapper {
+  text-align: center;
+  position: relative;
+  display: table;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

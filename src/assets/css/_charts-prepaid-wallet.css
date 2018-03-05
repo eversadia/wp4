@@ -1,0 +1,54 @@
+.charts-prepaid-wallet {
+  position: relative;
+  overflow-y: hidden;
+  border: 1px solid #ccc;
+
+  .loading-small {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  #scroller > {
+    div:nth-child(2) {
+      display: none !important;
+    }
+
+  }
+
+  .react-bs-table {
+    border: none !important;
+  }
+
+  .delayed {
+    animation: pulse 7s;
+  }
+
+  table {
+    width: 100%;
+    table-layout: auto;
+    border-bottom: 1px solid #ddd;
+
+    th {
+      display: none;
+    }
+
+    td:nth-child(2) {
+      border-left: none;
+    }
+
+    td:nth-child(4) {
+      padding-right: 20px;
+    }
+
+    td {
+      width: 30%;
+      border-top: 1px solid #ddd !important;
+      border-bottom: none !important;
+    }
+
+  }
+
+}

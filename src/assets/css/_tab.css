@@ -1,0 +1,110 @@
+#tab-app {
+  .spin {
+    display: block;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+
+    i {
+      font-size: 30px;
+    }
+
+  }
+
+  .tab-like-nav {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding-top: 11px;
+    box-sizing: border-box;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+    width: auto;
+    border-bottom: 1px solid #ccc;
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    height: 28px;
+    width: 100%;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0;
+    line-height: 28px;
+    float: left;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid transparent;
+    margin-bottom: 0;
+    position: relative;
+    font-size: 11px;
+    background: #f1f1f1;
+    text-align: center;
+    max-width: 180px;
+    min-width: 28px;
+    flex-flow: row wrap;
+    flex-shrink: 1;
+    border-radius: 3px 3px 0 0;
+  }
+
+  li.active {
+    border-bottom: 2px solid white;
+    margin-bottom: -2px;
+    background: white;
+    color: #666;
+
+    strong {
+      font-weight: bold;
+    }
+
+    em {
+      display: block;
+    }
+
+  }
+
+  li:hover {
+    em {
+      display: block;
+    }
+
+  }
+
+  strong {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #333;
+    cursor: pointer;
+    display: block;
+    padding: 0 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 28px;
+  }
+
+  em {
+    position: absolute;
+    background: #fff;
+    font-size: 14px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    line-height: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    color: #ccc;
+    top: -10px;
+    right: -10px;
+    z-index: 2;
+    display: none;
+    cursor: pointer;
+  }
+
+}

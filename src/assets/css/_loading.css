@@ -1,0 +1,156 @@
+.black-drop {
+  background: black;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+  cursor: wait;
+}
+
+.black-drop2 {
+  background: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+}
+
+.blocker {
+  background: transparent;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+  display: none;
+  cursor: wait;
+  width: 1px;
+  height: 1px;
+  /* remove widht 1px and height 1px for blocking mode */
+}
+
+.loading-wrapper {
+  z-index: 8889;
+  width: 210px;
+  height: 86px;
+  border-radius: 10px;
+  background: black;
+  display: block;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid red;
+  p {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+  }
+}
+
+.loading-wrapper2 {
+  z-index: 8889;
+  display: block;
+  margin: auto;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.spinner {
+  margin: 0 auto;
+  width: 100px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  margin: 0 2px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.content-loading,
+.loading {
+  text-align: center;
+  padding-top: 100px;
+  box-sizing: border-box;
+  i {
+    font-size: 50px;
+    color: black;
+  }
+}
+
+.table-loading-wrapper {
+  max-height: 1px;
+}
+
+.table-loading {
+  text-align: center;
+  position: relative;
+  top: -50px;
+  i {
+    font-size: 40px;
+    color: black;
+  }
+}
+
+.modal-loader {
+  color: #fff;
+  @media screen\0 {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+  }
+}

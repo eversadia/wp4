@@ -1,0 +1,65 @@
+.refresh-me {
+  position: fixed;
+  z-index: 1042;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 50%;
+  background: #dae5f4;
+  box-shadow: 0px 0px 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+
+  &.openme {
+    animation: bounceIn 1s;
+    display: block;
+  }
+
+  &.closeme {
+    animation: bounceOut 1s, fadeout 1s;
+    opacity: 0;
+  }
+
+  .close-refresh {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  p {
+    vertical-align: middle;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+
+  em {
+    color: #458cd0;
+    cursor: pointer;
+  }
+
+}
+
+.create-free-rounds-gameId.drop-down-multi {
+  ul.rw-list {
+    .rw-list-empty {
+      display: block;
+    }
+
+  }
+
+  ul.rw-list > li.rw-list-empty {
+    padding: 5px;
+  }
+
+  .rw-list:has(> li.rw-list-empty:parent) {
+    padding: 5px;
+  }
+
+}

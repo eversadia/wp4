@@ -1,0 +1,106 @@
+.user-dashboard {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  min-height: 250px;
+  overflow-x: hidden;
+
+  #column-left {
+    display: flex;
+    flex-grow: 0;
+    position: relative;
+
+    .child {
+
+      /* width: 50%;*/
+      max-width: 690px;
+      min-width: 550px;
+      padding-right: 40px;
+    }
+
+  }
+
+  #column-right {
+
+    /*width: 30%;*/
+    display: none;
+  }
+
+  .fa-pencil-square-o {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .child {
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .user-details-actionlink {
+    position: fixed;
+    bottom: 15px;
+
+    button {
+      margin-right: 10px;
+    }
+
+  }
+
+}
+
+.content-user-dashboard {
+  position: relative;  /* dirty fix */
+  height: 100%;
+
+  .user-actionlink {
+    position: fixed;
+    bottom: 15px;
+
+    button {
+      margin-right: 5px;
+    }
+
+  }
+
+  .user-details-date-box-cont,
+  .user-details-box-cont {
+    border-bottom: 1px solid #ccc;
+
+    label {
+      min-width: 130px;
+    }
+
+  }
+
+}
+
+@media all and (max-width:1200px) {
+  .user-dashboard {
+    #column-left {
+      .child {
+        max-width: 500px;
+        min-width: 400px;
+      }
+
+    }
+
+  }
+
+}
+
+@media all and (max-width:800px) {
+  .user-dashboard {
+    #column-right {
+      display: none;
+    }
+
+    #column-left {
+      flex-direction: column;
+    }
+
+  }
+
+}

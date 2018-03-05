@@ -1,0 +1,139 @@
+.content-operator-games {
+  padding-right: 0;
+  padding-bottom: 0;
+
+  .table-container {
+    box-sizing: border-box;
+    height: inherit;
+
+    td {
+      word-break: break-all;
+
+      em {
+        word-break: break-all;
+      }
+
+    }
+
+  }
+
+  .table-header {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-bottom: none;
+
+    table {
+      border: none;
+
+      th {
+        border: none;
+        border-left: 1px solid #ccc;
+      }
+
+    }
+
+  }
+
+  .react-bs-table {
+    border: 0;
+
+    table {
+      border-left: 1px solid #ddd;
+    }
+
+    .react-bs-container-header table {
+      border-top: 1px solid #ddd;
+
+      th {
+        border-right: 1px solid #ddd;
+      }
+
+    }
+
+    .react-bs-container-body table {
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+
+  }
+
+  .react-bs-table {
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    td,
+    th {
+      width: 80px !important;
+      min-width: 80px !important;
+      max-width: 80px !important;
+    }
+
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 90px !important;
+      min-width: 90px !important;
+      max-width: 90px !important;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 110px !important;
+      min-width: 100px !important;
+      max-width: 100px !important;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3) {
+      width: 70px !important;
+      min-width: 70px !important;
+      max-width: 70px !important;
+    }
+
+    th:nth-child(4),
+    td:nth-child(4),
+    th:nth-child(5),
+    td:nth-child(5) {
+      width: 150px !important;
+      min-width: 150px !important;
+      max-width: 150px !important;
+    }
+
+    th:nth-child(6),
+    td:nth-child(6) {
+      width: 70px !important;
+      min-width: 70px !important;
+      max-width: 70px !important;
+    }
+
+    th:nth-child(7),
+    td:nth-child(7) {
+      width: 50px !important;
+      min-width: 50px !important;
+      max-width: 50px !important;
+      border-right: none !important;
+    }
+
+    th:nth-child(8),
+    td:nth-child(8) {
+      width: 20px !important;
+      min-width: 20px !important;
+      max-width: 20px !important;
+      border-left: none !important;
+    }
+
+  }
+
+}
+
+.content-operator-game-dashboard {
+  .display-bet-values {
+    em,
+    strong {
+      padding-right: 10px;
+      display: inline-block;
+      float: none !important;
+    }
+
+  }
+
+}

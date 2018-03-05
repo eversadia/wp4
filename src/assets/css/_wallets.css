@@ -1,0 +1,272 @@
+.content-wallet {
+  position: relative;
+
+  .wallet {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  .sub-wallet {
+    padding-bottom: 10px;
+
+    h3 {
+      font-size: 13px;
+    }
+
+  }
+
+  .wallet-buttons {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+
+    .btn {
+      margin-left: 10px;
+    }
+
+  }
+
+  .react-bs-table,
+  .summary-table,
+  .table-container,
+  .table-header {
+    th:nth-child(1),
+    td:nth-child(1),
+    th:nth-child(2),
+    td:nth-child(2),
+    th:nth-child(3),
+    td:nth-child(3) {
+      width: 120px !important;
+      min-width: 120px !important;
+    }
+
+    th:nth-child(4),
+    td:nth-child(4) {
+      width: 120px !important;
+      min-width: 120px !important;
+      text-align: right !important;
+      padding-right: 10px;
+    }
+
+    th:nth-child(5),
+    td:nth-child(5),
+    th:nth-child(6),
+    td:nth-child(6),
+    th:nth-child(7),
+    td:nth-child(7),
+    th:nth-child(8),
+    td:nth-child(8) {
+      width: 120px !important;
+      min-width: 120px !important;
+    }
+
+  }
+
+}
+
+.content-wallet-details {
+  .child {
+    padding: 0;
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      em {
+        display: block;
+        max-width: 160px;
+      }
+
+    }
+
+    td:nth-child(1) {
+      min-width: 100px;
+      max-width: 100px;
+      padding-right: 0;
+      padding-left: 0;
+      width: 100px;
+    }
+
+    td:nth-child(2) {
+      font-size: 14px;
+    }
+
+  }
+
+}
+
+.content-wallet-dashboard {
+  .border {
+    border-bottom: 1px solid #ccc;
+  }
+
+}
+
+.content-wallet-dashboard-search {
+  .dp-ref-type {
+    width: 150px;
+  }
+
+  .react-bs-table,
+  .summary-table,
+  .table-container,
+  .table-header {
+    th {
+      padding: 4px 5px !important;
+    }
+
+    /*td {
+      padding: 2px 5px !important;
+      line-height: 100% !important;
+
+      .btn {
+        height: 18px;
+      }
+
+    }*/
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 50px !important;
+      min-width: 50px !important;
+      max-width: 50px !important;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 100px !important;
+      min-width: 100px !important;
+      max-width: 100px !important;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3) {
+      width: 140px !important;
+      min-width: 140px !important;
+      max-width: 140px !important;
+    }
+
+    th:nth-child(4),
+    td:nth-child(4),
+    th:nth-child(5),
+    td:nth-child(5),
+    th:nth-child(6),
+    td:nth-child(6),
+    th:nth-child(7),
+    td:nth-child(7),
+    th:nth-child(8),
+    td:nth-child(8) {
+      width: 120px !important;
+      min-width: 120px !important;
+      max-width: 120px !important;
+    }
+
+    th:nth-child(5),
+    td:nth-child(5),
+    th:nth-child(6),
+    td:nth-child(6) {
+      padding-right: 10px !important;
+    }
+
+    th:nth-child(7),
+    td:nth-child(7) {
+      border-right: 0;
+    }
+
+    th:nth-child(8),
+    td:nth-child(8) {
+      width: 20px !important;
+      min-width: 20px !important;
+      border-left: 0;
+      max-width: 20px !important;
+
+      .dropdown-menu {
+        top: -7px;
+        padding: 1px 0;
+        right: 20px;
+      }
+
+      ul li a {
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+
+    }
+
+  }
+
+  .transaction-summary {
+    padding: 15px 0;
+
+    table {
+      width: 100%;
+
+      td {
+        padding: 2px 5px;
+        font-size: 12px;
+      }
+
+    }
+
+    td:nth-child(1) {
+      width: 50px !important;
+      min-width: 50px !important;
+      max-width: 50px !important;
+    }
+
+    td:nth-child(2) {
+      width: 100px !important;
+      min-width: 100px !important;
+      max-width: 100px !important;
+    }
+
+    td:nth-child(3) {
+      width: 140px !important;
+      min-width: 140px !important;
+      max-width: 140px !important;
+    }
+
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(7),
+    td:nth-child(8) {
+      width: 120px !important;
+      min-width: 120px !important;
+      max-width: 120px !important;
+    }
+
+    td:nth-child(8) {
+      width: 20px !important;
+      min-width: 20px !important;
+      border-left: 0;
+      max-width: 20px !important;
+    }
+
+  }
+
+  .table-loading-wrapper {
+    max-height: 1px;
+  }
+
+  .table-loading {
+    text-align: center;
+    position: relative;
+    top: -50px;
+
+    i {
+      font-size: 40px;
+      color: black;
+    }
+
+  }
+
+  .table-loading-fresh {
+    top: 0;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+}
