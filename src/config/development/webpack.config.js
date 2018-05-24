@@ -5,11 +5,12 @@ const UglifyJSPlugin = require( 'uglifyjs-webpack-plugin' )
 const webpack = require( 'webpack' )
 const ExtractTextPlugin = require( 'extract-text-webpack-plugin' )
 
-const cssExtractTextPlugin = new ExtractTextPlugin( '[name].[hash].css', {
+const cssExtractTextPlugin = new ExtractTextPlugin( {
+  filename: '[name].css',
   allChunks: true
 } )
 
-const React = require( 'react' )
+// const React = require( 'react' )
 const config = {}
 
 config.entry = {
@@ -31,6 +32,8 @@ config.devtool = 'inline-source-map'
 
 config.devServer = {
   proxy: {},
+  // contentBase: path.resolve( __dirname, 'public' ),
+  // publicPath: '/scripts/',
   //hot: true,
   // https: false,
   // compress: false,
@@ -40,11 +43,24 @@ config.devServer = {
 config.module = {
   rules: [ {
     test: /\.css$/,
-    use: [ {
-      loader: 'style-loader'
-    }, {
-      loader: 'css-loader'
-    } ]
+    use: ExtractTextPlugin.extract( {
+      fallback: 'style-loader',
+      use: [ {
+        loader: 'css-loader',
+        options: {
+          // If you are having trouble with urls not resolving add this setting.
+          // See https://github.com/webpack-contrib/css-loader#url
+          url: false,
+          minimize: true,
+          sourceMap: true
+        }
+      }, {
+        loader: 'postcss-loader',
+        options: {
+          sourceMap: true
+        }
+      } ]
+    } )
   }, {
     test: /\.js|\.jsx$/,
     exclude: /node_modules/,
@@ -64,6 +80,7 @@ config.plugins = [
   // } ),
   //new CleanWebpackPlugin( [ '../../../build' ] ),
   cssExtractTextPlugin,
+  new ExtractTextPlugin( "app.css" ),
   new UglifyJSPlugin(),
   new webpack.HotModuleReplacementPlugin(),
   new HtmlWebpackPlugin( {
@@ -94,6 +111,8 @@ config.watch = true
 // }
 
 config.resolve = {
+  // extensions: [ '', '.js', '.jsx' ],
+  // modulesDirectories: [ 'node_modules', 'src' ],
   alias: {
     src: path.resolve( __dirname, 'src/' ),
     utils: path.resolve( __dirname, 'src/utils/' )
