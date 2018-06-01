@@ -3,8 +3,14 @@ const HtmlWebpackPlugin = require( 'html-webpack-plugin' )
 const CleanWebpackPlugin = require( 'clean-webpack-plugin' )
 const UglifyJSPlugin = require( 'uglifyjs-webpack-plugin' )
 const webpack = require( 'webpack' )
+const ExtractTextPlugin = require( 'extract-text-webpack-plugin' )
 
-const React = require( 'react' )
+const cssExtractTextPlugin = new ExtractTextPlugin( {
+  filename: '[name].css',
+  allChunks: true
+} )
+
+// const React = require( 'react' )
 const config = {}
 
 config.entry = {
@@ -20,22 +26,41 @@ config.mode = 'development'
 
 config.target = 'web'
 
-//config.externals = [ 'react' ]
+// config.externals = [ 'react' ]
 
 config.devtool = 'inline-source-map'
 
 config.devServer = {
   proxy: {},
-  hot: true,
-  https: false,
-  compress: false,
+  // contentBase: path.resolve( __dirname, 'public' ),
+  // publicPath: '/scripts/',
+  //hot: true,
+  // https: false,
+  // compress: false,
   port: 9999
 }
 
 config.module = {
   rules: [ {
     test: /\.css$/,
-    use: [ 'style-loader', 'css-loader' ]
+    use: ExtractTextPlugin.extract( {
+      fallback: 'style-loader',
+      use: [ {
+        loader: 'css-loader',
+        options: {
+          // If you are having trouble with urls not resolving add this setting.
+          // See https://github.com/webpack-contrib/css-loader#url
+          url: false,
+          minimize: true,
+          sourceMap: true
+        }
+      }, {
+        loader: 'postcss-loader',
+        options: {
+          sourceMap: true
+        }
+      } ]
+    } )
   }, {
     test: /\.js|\.jsx$/,
     exclude: /node_modules/,
@@ -47,7 +72,15 @@ config.module = {
 }
 
 config.plugins = [
+  // new webpack.optimize.AggressiveSplittingPlugin( {
+  //   minSize: 30000, //Byte, split point. Default: 30720
+  //   maxSize: 50000, //Byte, maxsize of per file. Default: 51200
+  //   chunkOverhead: 0, //Default: 0
+  //   entryChunkMultiplicator: 1, //Default: 1
+  // } ),
   //new CleanWebpackPlugin( [ '../../../build' ] ),
+  cssExtractTextPlugin,
+  new ExtractTextPlugin( "app.css" ),
   new UglifyJSPlugin(),
   new webpack.HotModuleReplacementPlugin(),
   new HtmlWebpackPlugin( {
@@ -58,11 +91,12 @@ config.plugins = [
     inject: 'body'
   } ),
   new webpack.ProvidePlugin( {
-    React: 'react',
-    ReactDOM: 'react-dom',
+    // React: 'react',
+    // ReactDOM: 'react-dom',
     Promise: 'exports?global.Promise!es6-promise',
     fetch: 'exports?self.fetch!whatwg-fetch'
-  } )
+  } ),
+
 ]
 
 config.watch = true
@@ -77,6 +111,8 @@ config.watch = true
 // }
 
 config.resolve = {
+  // extensions: [ '', '.js', '.jsx' ],
+  // modulesDirectories: [ 'node_modules', 'src' ],
   alias: {
     src: path.resolve( __dirname, 'src/' ),
     utils: path.resolve( __dirname, 'src/utils/' )

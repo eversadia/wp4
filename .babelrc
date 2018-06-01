@@ -1,4 +1,4 @@
 {
   "presets": ["env", "react"],
-  "plugins": ["transform-decorators-legacy",  "dynamic-import-webpack"]
+  "plugins": ["transform-decorators-legacy",  "dynamic-import-webpack", "css-modules-transform"]
 }
